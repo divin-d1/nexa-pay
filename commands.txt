@@ -1,0 +1,7 @@
+# ESP8266 MicroPython Setup Commands - Run in this order:
+
+# Step 1: Erase flash memory
+python -m esptool --port COM3 erase_flash
+
+# Step 2: Flash MicroPython firmware
+python -m esptool --port COM3 --baud 460800 write-flash --flash-size detect 0 "C:\Users\HHP\Downloads\ESP8266_GENERIC-20251209-v1.27.0.bin"
